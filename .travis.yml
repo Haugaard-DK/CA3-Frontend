@@ -22,7 +22,7 @@ deploy:
   skip-cleanup: true
   script: scp -r ./application/build/* $REMOTE_USER@142.93.104.247:/var/www/$REMOTE_LOCATION
   on:
-    branch: master
+    branch: main
 before_install:
 - openssl aes-256-cbc -K $encrypted_db2095f63ba3_key -iv $encrypted_db2095f63ba3_iv
   -in deploy_rsa.enc -out deploy_rsa -d
