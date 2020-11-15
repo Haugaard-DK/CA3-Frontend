@@ -5,7 +5,7 @@ language: node_js
 node_js: node
 cache: npm
 addons:
-  ssh_known_hosts: 134.122.64.238
+  ssh_known_hosts: 142.93.104.247
 script:
 - cd ./application
 - npm install
